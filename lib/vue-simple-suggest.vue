@@ -606,9 +606,9 @@ export default {
       }
 
       finally {
-        if (this.maxSuggestions) {
-          result.splice(this.maxSuggestions)
-        }
+       // if (this.maxSuggestions) {
+       //   result.splice(this.maxSuggestions)
+       // }
 
         return result
       }
@@ -687,5 +687,9 @@ export default {
 .vue-simple-suggest.designed .suggestions .suggest-item.selected {
   background-color: #2832D5;
   color: #fff;
+}
+.suggestions{
+  overflow: scroll;
+  max-height: 246px;
 }
 </style>
